@@ -1,0 +1,28 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.steps {
+  .content {
+    padding: 8rem 3rem;
+    .h1__txt {
+      margin-bottom: 5rem;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      &--item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .step--thumb {
+          width: 150px;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@import "../../scss/utils/responsive";

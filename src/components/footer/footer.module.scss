@@ -1,0 +1,49 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.footer {
+  .content {
+    width: 100%;
+    padding: 8rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    &--left {
+      flex: 20%;
+      > * {
+        margin-bottom: 2.5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .social__icons {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        &--icon {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          @include center-content-x;
+          > * {
+            color: $white;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    &--right {
+      display: flex;
+      justify-content: space-between;
+      gap: 4rem;
+      &__list {
+        .list {
+          &__item {
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "../../scss/utils/responsive";

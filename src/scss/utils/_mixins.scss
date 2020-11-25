@@ -1,0 +1,148 @@
+@import "./variables";
+
+@mixin center-content-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin center-content-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn($bgColor, $color, $radius) {
+  background: $bgColor;
+  color: $color;
+  padding: 14px 20px;
+  position: relative;
+  @include center-content-x;
+  white-space: nowrap;
+  border-radius: $radius !important;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: none !important;
+}
+
+// utlility classes
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.w100 {
+  min-width: 100%;
+}
+
+.txt--center {
+  width: 100%;
+  text-align: center;
+}
+
+.bg--primary {
+  background: $primary-color;
+  &.light--mode {
+    background: $secondary-typo;
+  }
+}
+
+.bg--secondary {
+  background: $secondary-color;
+  &.light--mode {
+    background: $shade;
+  }
+}
+
+.h1__txt {
+  font-size: 3em;
+  font-weight: 500;
+  color: $white;
+  &.light--mode {
+    background: $primary-color;
+  }
+}
+
+.h2__txt {
+  font-size: 2em;
+  font-weight: 300;
+  color: $white;
+  &.light--mode {
+    background: $primary-color;
+  }
+}
+
+.h3__txt {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: $white;
+  &.light--mode {
+    background: $primary-color;
+  }
+}
+
+.normal__txt {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: $white;
+  &.light--mode {
+    background: $primary-color;
+  }
+}
+
+.menu__txt {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: $white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  &.light--mode {
+    background: $primary-color;
+  }
+}
+
+.light--mode {
+  .bg--primary {
+    background: $secondary-typo;
+  }
+  .bg--secondary {
+    background: $shade;
+  }
+  .h1__txt,
+  .h2__txt,
+  .h3__txt,
+  .normal__txt,
+  .menu__txt,
+  .social__icons--icon,
+  .logo__txt {
+    color: $primary-color !important;
+  }
+}
+
+.black {
+  color: $main-typo;
+}
+
+.green {
+  color: $green;
+}
+.red {
+  color: $red;
+}
+
+.btn__trans {
+  background: transparent;
+}
+
+.accent {
+  color: $accent;
+}
+
+.block {
+  display: block;
+}

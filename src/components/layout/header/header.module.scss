@@ -1,0 +1,19 @@
+@import "../../../scss/utils/mixins";
+@import "../../../scss/utils/variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+  &__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@import "../../../scss/utils/responsive";

@@ -1,0 +1,13 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.solution {
+  .content {
+    width: 50%;
+    @include center-content-y;
+    padding: 8rem 4rem;
+    gap: 3rem;
+  }
+}
+
+@import "../../scss/utils/responsive";

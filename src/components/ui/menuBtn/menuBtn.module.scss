@@ -1,0 +1,11 @@
+@import "../../../scss/utils/mixins";
+@import "../../../scss/utils/variables";
+
+.menu--btn {
+  display: none;
+  cursor: pointer;
+  fill: $white;
+  font-size: 32px;
+}
+
+@import "../../../scss/utils/responsive";

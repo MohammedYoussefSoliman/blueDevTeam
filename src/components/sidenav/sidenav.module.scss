@@ -1,0 +1,28 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.sidenav {
+  position: relative;
+  padding: 1rem;
+  padding-top: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &:last-child {
+      position: absolute;
+      bottom: 1rem;
+      // justify-self: flex-end;
+    }
+  }
+  &__logo {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $white;
+  }
+}
+
+@import "../../scss/utils/responsive";

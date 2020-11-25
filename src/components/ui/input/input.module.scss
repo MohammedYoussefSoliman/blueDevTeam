@@ -1,0 +1,41 @@
+@import "../../../scss/utils/mixins";
+@import "../../../scss/utils/variables";
+
+.input--group {
+  width: 100%;
+  margin-bottom: 1rem;
+  .label {
+    color: $white;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    background: $secondary-color;
+    border: 1px solid $secondary-color;
+    padding: 0.5rem;
+    color: $white;
+    &:focus {
+      border: 1px solid $white;
+    }
+  }
+  &.light--mode {
+    .label {
+      color: $primary-color;
+    }
+    .input {
+      background: $secondary-typo;
+      color: $primary-color;
+    }
+  }
+  &.invalid {
+    .input {
+      border: 1px solid $red;
+    }
+  }
+}
+
+@import "../../../scss/utils/responsive";

@@ -1,0 +1,27 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    width: 43px;
+    margin-right: 0.45rem;
+  }
+  &.footer--logo {
+    img {
+      width: 30px;
+      margin-right: 0.3rem;
+    }
+    .logo__txt {
+      font-size: 14px;
+    }
+  }
+  span {
+    font-size: 17px;
+    font-style: italic;
+    color: $white;
+  }
+}
+
+@import "../../scss/utils/responsive";

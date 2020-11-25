@@ -1,0 +1,31 @@
+@import "../../../scss/utils/mixins";
+@import "../../../scss/utils/variables";
+
+.btn__lg {
+  font-size: 2.5em !important;
+  font-weight: 600 !important;
+  padding: 8px 40px !important;
+}
+
+.btn__md {
+  font-size: 2em !important;
+}
+
+.btn__sm {
+  font-size: 1em !important;
+}
+
+.btn__primary {
+  @include btn($white, $primary-color, 20px);
+  &.light--mode {
+    background: $primary-color;
+    color: $white !important;
+  }
+}
+
+.btn__success {
+  background: $green;
+  color: $white;
+}
+
+@import "../../../scss/utils/responsive";

@@ -1,0 +1,36 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.hero {
+  margin-top: 90px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 4rem;
+    gap: 3rem;
+    &__upper {
+      width: 100%;
+      flex: 4;
+      gap: 2.5rem;
+      display: flex;
+      align-items: center;
+      &--thumb {
+        width: 260px;
+      }
+      &--content {
+        .h1__txt {
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+    &__lower {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@import "../../scss/utils/responsive";

@@ -1,0 +1,25 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.dashbody {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    margin: 2rem 0 2rem 2rem;
+    .h3__txt {
+      margin-bottom: 0.75rem;
+    }
+  }
+  &__tabs {
+    width: 100%;
+    color: $white;
+    display: flex;
+    justify-content: center;
+  }
+  .tab--panel {
+    flex: 1;
+  }
+}
+
+@import "../../scss/utils/responsive";

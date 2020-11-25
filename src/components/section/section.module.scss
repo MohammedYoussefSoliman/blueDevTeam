@@ -1,0 +1,32 @@
+@import "../../scss/utils/mixins";
+@import "../../scss/utils/variables";
+
+.section {
+  .content {
+    width: 100%;
+    display: flex;
+    padding: 8rem 4rem;
+    gap: 3rem;
+    align-items: center;
+    .h1__txt {
+      margin-bottom: 3rem;
+    }
+    &__thumb {
+      flex: 1;
+      min-width: 190px;
+    }
+    &__txt {
+      flex: 5;
+    }
+  }
+  &.reverse {
+    .content {
+      flex-direction: row-reverse;
+      &__thumb {
+        min-width: 244px;
+      }
+    }
+  }
+}
+
+@import "../../scss/utils/responsive";
